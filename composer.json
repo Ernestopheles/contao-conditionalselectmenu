@@ -1,7 +1,12 @@
 {
     "name": "terminal42/contao-conditionalselectmenu",
     "description": "conditional select menu extension for Contao Open Source CMS",
-    "keywords": ["form", "select", "conditional", "contao"],
+    "keywords": [
+        "form",
+        "select",
+        "conditional",
+        "contao"
+    ],
     "type": "contao-bundle",
     "license": "MIT",
     "authors": [
@@ -27,7 +32,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
-        "contao/core-bundle": "^4.9",
+        "contao/core-bundle": "^5",
         "doctrine/dbal": "^2.11 || ^3"
     },
     "require-dev": {
@@ -46,5 +51,12 @@
     },
     "scripts": {
         "cs-fixer": "tools/ecs/vendor/bin/ecs check src/ --fix --ansi"
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": true,
+            "contao/manager-plugin": true
+        }
     }
 }
